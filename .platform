@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "stage report power bi"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "75a46526-01ab-4f85-b263-384600caeca2"
+  }
+}
