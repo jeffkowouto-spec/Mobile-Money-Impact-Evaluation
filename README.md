@@ -2,13 +2,17 @@
 
 Ce dépôt présente le tableau de bord Power BI développé dans le cadre de mon mémoire de stage, analysant l'impact causal du portefeuille numérique sur les comportements économiques des éleveurs.
 
-## 📊 Cascade de Sélection (Modèle Heckman)
+## 📊 Cascade de Sélection & Vue Globale
+![KPI Globaux](assets/kpi_overview.png)
+
 L'échantillon suit les étapes de sélection suivantes :
-* **Échantillon total** : 1 212 éleveurs
+* **Échantillon total** : 1 208 éleveurs
 * **Équipés en téléphone portable** : 864 éleveurs
 * **Adoptants du Mobile Money** : 480 éleveurs
 
 ## 📈 Résultats de l'Effet Causal (Méthode PSM - ATT)
+![Analyse d'Impact Causal](assets/causal_impact.png)
+
 Le modèle d'Appariement sur Score de Propension (PSM) met en évidence les impacts suivants :
 
 ### 🟢 Impacts Positifs & Significatifs
@@ -19,6 +23,10 @@ Le modèle d'Appariement sur Score de Propension (PSM) met en évidence les impa
 * **Revenu Laitier Courant** : **+16 022 FCFA (ns)** — Pas d'effet à court terme sur les gains financiers directs.
 * **Livraison Laiterie (collecte_ldb)** : **+0.028 (ns)** — L'outil ne modifie pas la régularité des livraisons à la Laiterie du Berger.
 
+## 📉 Production et Ventes de Lait
+![Éleveurs et Productions](assets/eleveurs_productions.png)
+
 ## 🛠️ Outils utilisés
 * **Power BI Desktop** (Modélisation de données et Visualisation KPI)
 * **DAX** (Création des mesures et filtres d'étapes)
+* **Stata / R / Python** *(ajoute le logiciel avec lequel tu as calculé le PSM et Heckman)*
