@@ -9,6 +9,18 @@ L'échantillon suit les étapes de sélection suivantes :
 * **Échantillon total** : 1 208 éleveurs
 * **Équipés en téléphone portable** : 864 éleveurs
 * **Adoptants du Mobile Money** : 480 éleveurs
+  
+* ### ⚠️ Pourquoi le modèle de Heckman ?
+Cette attrition successive montre que l'adoption du Mobile Money n'est pas aléatoire :
+1. **Accès au téléphone** : Seuls les éleveurs possédant un téléphone portable peuvent accéder au service.
+2. **Décision d'adoption** : Seule une partie des éleveurs équipés choisit d'adopter le Mobile Money.
+
+Évaluer directement l'impact sur l'échantillon final (480 éleveurs) introduirait un **biais de sélection** (ou biais d'endogénéité) : les éleveurs équipés et adoptants possèdent des caractéristiques inobservables spécifiques (revenu, niveau d'instruction, réseau) qui influencent déjà leurs performances économiques.
+
+Le **modèle de correction en deux étapes de Heckman** permet de :
+* Modéliser la probabilité de sélection à chaque étape (*équation de sélection*).
+* Corriger le biais dans l'estimation de l'impact causal réel du Mobile Money (*équation d'intérêt*).
+  
 
 ##  Résultats de l'Effet Causal (Méthode PSM - ATT)
 [![Impact Causal](Causal_Impact.png)](Causal_Impact.png)
