@@ -26,7 +26,7 @@ Le modèle d'Appariement sur Score de Propension (PSM) met en évidence les impa
 ##  Production et Ventes de Lait
 [![Statistiques Descriptives](Descriptive_stats.png)](Descriptive_stats.png)
 
-## 🛠️ Outils utilisés
+## 🛠️ Outils utilisés pour corriger le biais de sélection et pour la PSM
 * **Power BI Desktop** (Modélisation de données et Visualisation KPI)
 * **DAX** (Création des mesures et filtres d'étapes)
-* **Stata / R / Python** *(ajoute le logiciel avec lequel tu as calculé le PSM et Heckman)*
+* **Stata / R / 
