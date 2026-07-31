@@ -19,13 +19,20 @@ Cette attrition successive montre que l'adoption du Mobile Money n'est pas aléa
 
 Le **modèle de correction en deux étapes de Heckman** permet de :
 * Modéliser la probabilité de sélection à chaque étape (*équation de sélection*).
-* Corriger le biais dans l'estimation de l'impact causal réel du Mobile Money (*équation d'intérêt*).
+* Corriger le biais dans l'estimation de l'impact causal réel du Mobile Money grâce au ratio de l'inverse de Mills (*équation d'intérêt*).
   
 
 ##  Résultats de l'Effet Causal (Méthode PSM - ATT)
 [![Impact Causal](Causal_Impact.png)](Causal_Impact.png)
 
-Le modèle d'Appariement sur Score de Propension (PSM) et l'effet mayen du traitement sur les traités (ATT) mettent en évidence les impacts suivants :
+###  Pourquoi compléter le PSM (Propensity Score Matching) ?
+
+Alors que Heckman corrige le biais d'auto-sélection lié à la décision d'adoption, le **PSM** permet d'évaluer l'effet causal direct du Mobile Money en résolvant le problème du **contre-factuel**.
+
+* **Création du groupe de contrôle** : Le PSM apparie chaque éleveur adoptant (groupe traité) avec un éleveur non-adoptant (groupe de contrôle) ayant un score de propension quasi identique, basé sur des caractéristiques observées similaires (taille du cheptel, âge, sexe, zone géographique...).
+* **Isolation de l'effet (ATT)** : En comparant ces deux groupes équilibrés, on mesure l'**Effet Moyen du Traitement sur les Traités (ATT)**. Cela garantit que l'écart de performance constaté (ex. revenus, volume de lait vendu, taux d'employabilité...) est directement attribuable au Mobile Money, et non à d'autres facteurs socio-économiques.
+
+Le modèle d'Appariement sur Score de Propension (PSM) et l'effet moyen du traitement sur les traités (ATT) mettent en évidence les impacts suivants :
 
 ###  Impacts Positifs & Significatifs
 * **Capital Bétail (Stock de richesse)** : **+1.11 \*\*** (Significatif au seuil de 5%) — L'adoption favorise l'épargne sur pied et l'accumulation du cheptel.
