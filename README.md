@@ -25,7 +25,7 @@ Le **modèle de correction en deux étapes de Heckman** permet de :
 ##  Résultats de l'Effet Causal (Méthode PSM - ATT)
 [![Impact Causal](Causal_Impact.png)](Causal_Impact.png)
 
-###  Pourquoi compléter le PSM (Propensity Score Matching) ?
+###  Pourquoi compléter avec le PSM (Propensity Score Matching) ?
 
 Alors que Heckman corrige le biais d'auto-sélection lié à la décision d'adoption, le **PSM** permet d'évaluer l'effet causal direct du Mobile Money en résolvant le problème du **contre-factuel**.
 
