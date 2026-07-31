@@ -15,7 +15,7 @@ Cette attrition successive montre que l'adoption du Mobile Money n'est pas aléa
 1. **Accès au téléphone** : Seuls les éleveurs possédant un téléphone portable peuvent accéder au service.
 2. **Décision d'adoption** : Seule une partie des éleveurs équipés choisit d'adopter le Mobile Money.
 
-Évaluer directement l'impact sur l'échantillon final (480 éleveurs) introduirait un **biais de sélection** (ou biais d'endogénéité) : les éleveurs équipés et adoptants possèdent des caractéristiques inobservables spécifiques (revenu, niveau d'instruction, réseau) qui influencent déjà leurs performances économiques.
+Évaluer directement l'impact sur l'échantillon final (480 éleveurs) introduirait un **biais de sélection** (ou biais d'endogénéité) : les éleveurs équipés et adoptants possèdent des caractéristiques inobservables spécifiques (revenu, niveau d'instruction, accès aux infrastructures,...) qui influencent déjà leurs performances économiques.
 
 Le **modèle de correction en deux étapes de Heckman** permet de :
 * Modéliser la probabilité de sélection à chaque étape (*équation de sélection*).
@@ -25,7 +25,7 @@ Le **modèle de correction en deux étapes de Heckman** permet de :
 ##  Résultats de l'Effet Causal (Méthode PSM - ATT)
 [![Impact Causal](Causal_Impact.png)](Causal_Impact.png)
 
-Le modèle d'Appariement sur Score de Propension (PSM) met en évidence les impacts suivants :
+Le modèle d'Appariement sur Score de Propension (PSM) et l'effet mayen du traitement sur les traités (ATT) mettent en évidence les impacts suivants :
 
 ###  Impacts Positifs & Significatifs
 * **Capital Bétail (Stock de richesse)** : **+1.11 \*\*** (Significatif au seuil de 5%) — L'adoption favorise l'épargne sur pied et l'accumulation du cheptel.
